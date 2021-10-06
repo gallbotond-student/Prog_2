@@ -1,0 +1,3 @@
+C:/Users/Botond/CLionProjects/felmero1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Botond/CLionProjects/felmero1/cmake-build-debug/CMakeFiles/felmero1.dir
+C:/Users/Botond/CLionProjects/felmero1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
