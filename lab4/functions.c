@@ -103,6 +103,13 @@ int number_digit_number(int n){
 
     return i;
 }
+
+int number_digit_number_rec(int n, int i){
+    if(n == 0)
+        return i;
+    else
+        number_digit_number_rec(n / 10, ++i);
+}
 //szám páros számjegyeinek a kitörlése
 int delete_digit_number(int n) {
     int num = 0, ten = 1;
@@ -133,4 +140,74 @@ int insert_digit_number(int n){
 
     return num;
 }
+
+int power_rec(int a, int b){
+    if(b == 0){
+        return 1;
+    }
+    else
+    {
+        if(b % 2 == 0){
+            int h = power_rec(a, b / 2);
+            return h * h;
+        }
+        else{
+            int h = power_rec(a, (b - 1) / 2);
+            return h * h * a;
+        }
+    }
+}
+
+int *maxkereses(int *a, int n){
+    if(n == 1){
+        return a;
+    }
+    else{
+        int *max = maxkereses(a+1, n-1);
+        if(*a > *max){
+            return a;
+        }
+        else {
+            return max;
+        }
+    }
+}
+
+int max_kereses(int *a, int n){
+    if(n == 0){
+        return a[0];
+    }
+    else{
+        int max = max_kereses(a, n-1);
+        if(a[n] > max){
+            return a[n];
+        }
+        else {
+            return max;
+        }
+    }
+}
+int binariskereses(int *a, int ah, int fh, int szam){
+    int kozep = (ah + fh) / 2;
+    if(ah > fh){
+        return -1;
+    }
+    if(a[kozep] == szam){
+        return a[kozep];
+    }
+    else{
+        if(szam > a[kozep]){
+            binariskereses(a, kozep + 1, fh, szam);
+        }
+        else{
+            binariskereses(a, ah, kozep - 1, szam);
+        }
+    }
+}
+bool letezik_e(int *a, int n, int szam){
+
+}
+//int hatvanyozas_1(int b, int exp);
+//int hatvanyozas_2(int b, int exp);
+//int lnko(int a, int b);
 
