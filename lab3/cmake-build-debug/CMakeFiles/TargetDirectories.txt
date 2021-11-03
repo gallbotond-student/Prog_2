@@ -1,3 +1,3 @@
-D:/Repositories/Prog_2/lab3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Repositories/Prog_2/lab3/cmake-build-debug/CMakeFiles/lab3.dir
-D:/Repositories/Prog_2/lab3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Botond/Repos/Prog_2/lab3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Botond/Repos/Prog_2/lab3/cmake-build-debug/CMakeFiles/lab3.dir
+C:/Users/Botond/Repos/Prog_2/lab3/cmake-build-debug/CMakeFiles/edit_cache.dir
