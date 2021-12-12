@@ -39,15 +39,19 @@ int main() {
         printf("%d ", bankNotes[i]);
     }
 
-    int amount, count = 0;
+    int amount;
     fscanf(f, "%d", &amount);
 
     printf("\nPayed: ");
-    while(amount) {
-        if(amount / bankNotes[--n] > 0) {
-            printf("%dx%d ",amount / bankNotes[n], bankNotes[n]);
-            amount %= bankNotes[n];
+    while(amount > 0 && amount % bankNotes[--n] != amount) {
+        if(amount / bankNotes[n] > 0) {
+            printf("%dx%d ", amount / bankNotes[n], bankNotes[n]);
+            amount -= (amount / bankNotes[n]) * bankNotes[n];
         }
+    }
+
+    if(amount > 0) {
+        printf("\nCannot be payed...");
     }
 
     fclose(f);
