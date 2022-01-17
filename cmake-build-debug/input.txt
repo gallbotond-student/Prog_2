@@ -1,0 +1,14 @@
+12
+
+Andras Kinga 1 32 1
+Janosi Ferencz 0 23 3
+Kelemen Denes 0 25 3
+Mezga Ede 0 33 2
+Demeter Eszter 1 21 5
+Jozsa Lenke 1 27 5
+Mikszath Janos 0 54 2
+Marko Elod 0 44 1
+Makkos Rita 1 22 2
+Jelnek Lenke 1 28 1
+Misa Laszlo 0 24 4
+Demeter Ferenc 0 49 4
